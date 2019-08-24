@@ -1,0 +1,250 @@
+/*NOTES ON ASSIGNEMENT @ BOTTOM */
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777777;
+  background: url("../images/background.png")
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* general */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+/* header */
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #ffffff;
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  height: 50px;
+}
+
+h3, h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+
+/*ALL MY NOTES I HAVE MADE ON THE PROFILE SOLUTION*/
+/*I should have gone in the order or the prompt. Or, I should have started with the smallest details, i.e. the font and then moved down to background last*/
+/*The border-box element makes it so that padding is included in whatever max width I tell the box to be.*/
+/*The asterisk before the bracket applies to everthing within the page. Kind of like a master command.*/
+/*The "0" applies to the width of the margin and the "auto" is the auto height of the page. Or kind of similiar to "max-height" albeit unlimited*/
+/*"Clear both" is telling my page that this container and everything inside it CANNOT float. Basically the eniterity of the page won't float where other object might if not specified.*/
+/*This is going to tell my headers and paragraph, i.e. text that is has to be 20px away from the end of the container.*/
+/*The the "margin-bottom rule" will ONLY APPLY to what is before the bracket. These are set rules for all.*/
+/*This is telling me that the last "p" or paragraph/text will be different. I.e., font color, size, etc... In this case it is going to the bottom of the container. It will have no padding other than what is stated in the container element.*/
+/*I can apply several astethic commands to one command rather than each individually.*/
+/*This ONLY APPLIES TO MY HEADER DUE TO THE "ID" PROPERTY!!!!*/
+/*The "z-index" only works with "position" It tells me the stack order of my header in this case.*/
+/*The 30px will only apply to the bottom. The first two values are for the top and the right/left-margin.*/
+/*The overflow will create a scrollbar automatically. I used "overflow:hidden" in my inital project. As well as placing it incorrectly*/
+/*This is pushing my text down from the top*/
+/*this will only change what is has an "a" in it. I.e., It is changing the way my links look since there is an "a" in "a href"*/
+ /*This will display my images horizontally, not vertically. If I wanted them vertical, I would use just "display-block"*/
+/*The first navigation link will have no border*/
+/*This is the all encompassing*/
+/*This is a little arithmatic that tells the container that creates a 70px (or 35px on each side) from edge of webpage*/
+/*This is the class of mainsection*/
+/*The Portfolio Page*/
+/*This applies to my image pic*/
+/*Contact Page. The page I initially did not finish.*/
+/*This is an unordered list*/
+/*Label is what prompts the user to write or click their input. Think if you're checking off a box do you click, "male" or "female"?*/
+/*This is where the user inputs their information. the "type=x" designates what is to be entered. */
+/*THIS IS WHERE A MESSAGE IS WRITTEN..."text area"*/
+
+ 
