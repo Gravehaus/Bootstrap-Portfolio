@@ -52,7 +52,10 @@ h3 {
   border: 2px, #777777,solid;
 }
 
-
+.myfooter{
+  align-content: center;
+  text-align: center;
+}
 
 
 
