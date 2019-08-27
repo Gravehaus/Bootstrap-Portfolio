@@ -2,6 +2,7 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
    background: url("images/background.png");
+   max-height:100%;
 }
 
 .bg-light {
@@ -36,24 +37,20 @@ h3 {
   
   }
 
-  .border-left {
-    border-left: 1px solid #dee2e6!important;
-    margin-left: 1em;
-    
+.border-left {
+  border-left: 1px solid #dee2e6!important;
+  margin-left: 1em;
 }
 
-.img{
+
+.img1{
   float:left;
-  width:25%;
+  width:20%;
 }
 
 .p{
   border: 2px, #777777,solid;
 }
-
-.myborder{
-  border-bottom: 3px,#777777,solid;
-  }
 
 
 
